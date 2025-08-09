@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Platforms>AnyCPU;x64</Platforms>
+    <GameFolder>$(MD_DIRECTORY)</GameFolder>
+	<ModsFolder>$(GameFolder)\Mods</ModsFolder>
+    <MelonLoader>$(GameFolder)\MelonLoader</MelonLoader>
+    <MelonNET6>$(MelonLoader)\net6</MelonNET6>
+</PropertyGroup>
+
+<ItemGroup>
+    <None Remove="Charts\-ALL PERFECT- 00 Variety Offering.mdp" />
+    <None Remove="Charts\EPHMR.mdm" />
+    <None Remove="Charts\Goyang Ubur Ubur.mdm" />
+</ItemGroup>
+
+<ItemGroup>
+    <EmbeddedResource Include="Charts\-ALL PERFECT- 00 Variety Offering.mdp" />
+    <EmbeddedResource Include="Charts\EPHMR.mdm" />
+    <EmbeddedResource Include="Charts\Goyang Ubur Ubur.mdm" />
+</ItemGroup>
+
+<ItemGroup>
+    <Reference Include="0Harmony">
+        <HintPath>$(MelonNET6)\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomAlbums">
+        <HintPath>$(ModsFolder)\CustomAlbums.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+        <HintPath>$(MelonNET6)\MelonLoader.dll</HintPath>
+    </Reference>
+</ItemGroup>
+
+</Project>
