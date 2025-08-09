@@ -1,6 +1,6 @@
 # EmbeddedChart
 
-This is a mod for embedding [CustomAlbums](https://github.com/MDMods/CustomAlbums) chart(s) into Muse Dash, allowing for arbitrary code execution for the charts, effectively allowing for modcharting.
+This is a template mod for embedding [CustomAlbums](https://github.com/MDMods/CustomAlbums) chart(s) into a Muse Dash mod, enabling code execution alongside specific charts, effectively allowing for modcharting.
 
 ## Building
 
